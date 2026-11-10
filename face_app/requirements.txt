@@ -1,0 +1,11 @@
+# Core (required)
+opencv-contrib-python>=4.8.0   # includes cv2.dnn, cv2.face (LBPH), and bundled Haar cascades
+numpy>=1.24.0
+
+# Optional (only needed for `--backend embedding`, i.e. deep-learning
+# face recognition via 128-d embeddings, conceptually similar to
+# FaceNet/ArcFace). This backend gives higher accuracy across pose and
+# lighting variation, but dlib compiles from source and can take
+# several minutes to install.
+dlib>=19.24.0
+face_recognition>=1.3.0
